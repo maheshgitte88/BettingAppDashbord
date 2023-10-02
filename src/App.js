@@ -15,6 +15,11 @@ import Geography from "./scenes/geography";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme";
 import Calendar from "./scenes/calendar/calendar";
+import AllMatch from "./scenes/Matchs/AllMatch";
+import MatchQuations from "./scenes/Matchs/MatchQuations";
+import AddNewMatch from "./scenes/Matchs/AddNewMatch";
+import AllBets from "./scenes/Bets/AllBets";
+import AllUsers from "./scenes/Users/AllUsers";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -40,6 +45,11 @@ function App() {
               <Route path="/faq" element={<FAQ />} />
               <Route path="/calendar" element={<Calendar />} />
               <Route path="/geography" element={<Geography />} />
+              <Route path="/all-matchs" element={<AllMatch />} />
+              <Route path="/match-quations/:id" element={<MatchQuations />} />
+              <Route path="/add-New-match" element={<AddNewMatch />} />
+              <Route path="/all-bets" element={<AllBets />} />
+              <Route path="/all-users" element={<AllUsers />} />
             </Routes>
           </main>
         </div>
